@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,7 +95,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -180,9 +180,9 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Home
           </a>
@@ -190,9 +190,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Tags
           </a>
@@ -200,9 +200,9 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Categories
           </a>
@@ -210,9 +210,9 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Archives
           </a>
@@ -251,144 +251,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://mankichen.github.io/2020/01/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MankiChen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Manki's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/16/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-16T21:18:43+08:00">
-                2020-01-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://mankichen.github.io/2019/10/06/HiSilicon-Hi3520D-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MankiChen">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/logo/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -476,55 +344,20 @@
       
         
           
-            <h2 id="Hi3520D入门一（开发环境）"><a href="#Hi3520D入门一（开发环境）" class="headerlink" title="Hi3520D入门一（开发环境）"></a>Hi3520D入门一（开发环境）</h2><blockquote>
-<p>学习环境</p>
-<p>OS：Deepin 15.10</p>
-<p>SDK版本：C01SPC040</p>
-</blockquote>
-<p>自己还是第一次接触的Linux的平台，所以博客会记录自己的学习过程，由于学习环境不一样，所以以下的步骤可能会略有差异，整体应该是大同小异的。自己也是也是一个初学者，所以文章要是有错误的地方望大家指出。</p>
-<h3 id="解压SDK包"><a href="#解压SDK包" class="headerlink" title="解压SDK包"></a>解压SDK包</h3><p>SDK包所在位置:<code>Hi3520D_V100R001C01SPC040/release/01.software/board/Hi3520D_SDK_V1.0.4.0.tgz</code></p>
-<p>通过tar命令解压压缩包</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tar -zxvf Hi3520D_SDK_V1.0.4.0.tgz</span><br></pre></td></tr></table></figure>
-<p>解压完成后应该有会以下的文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── package</span><br><span class="line">│   ├── drv.tgz</span><br><span class="line">│   ├── image_uclibc</span><br><span class="line">│   │   ├── rootfs_hi3520d_256k.jffs2</span><br><span class="line">│   │   ├── rootfs_hi3520d_64k.jffs2</span><br><span class="line">│   │   ├── u-boot_hi3520d.bin</span><br><span class="line">│   │   └── uImage_hi3520d_full</span><br><span class="line">│   ├── mpp.tgz</span><br><span class="line">│   ├── osdrv.tgz</span><br><span class="line">│   └── rootfs_uclibc.tgz</span><br><span class="line">├── scripts</span><br><span class="line">│   └── common.sh</span><br><span class="line">├── sdk.cleanup</span><br><span class="line">└── sdk.unpack</span><br></pre></td></tr></table></figure>
+          Hi3520D入门一（开发环境）
+学习环境
+OS：Deepin 15.10
+SDK版本：C01SPC040
 
-
-
-<p>在Hi3520D_SDK_V1.0.4.0目录下执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./sdk.unpack</span><br></pre></td></tr></table></figure>
-
-<p>若出现一下输出</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">./sdk.unpack: 2: ./sdk.unpack: <span class="built_in">source</span>: not found</span><br><span class="line">./sdk.unpack: 4: ./sdk.unpack: ECHO: not found</span><br><span class="line">./sdk.unpack: 6: ./sdk.unpack: WARN: not found</span><br><span class="line">./sdk.unpack: 7: ./sdk.unpack: WARN: not found</span><br><span class="line">./sdk.unpack: 8: ./sdk.unpack: ECHO: not found</span><br><span class="line">./sdk.unpack: 20: ./sdk.unpack: ECHO: not found</span><br><span class="line">./sdk.unpack: 22: ./sdk.unpack: run_command_progress_float: not found</span><br><span class="line">./sdk.unpack: 24: ./sdk.unpack: ECHO: not found</span><br><span class="line">./sdk.unpack: 26: ./sdk.unpack: run_command_progress_float: not found</span><br><span class="line">./sdk.unpack: 28: ./sdk.unpack: ECHO: not found</span><br><span class="line">mkdir: 已创建目录 <span class="string">'mpp'</span></span><br><span class="line">./sdk.unpack: 30: ./sdk.unpack: run_command_progress_float: not found</span><br><span class="line">./sdk.unpack: 32: ./sdk.unpack: ECHO: not found</span><br><span class="line">mkdir: 已创建目录 <span class="string">'drv'</span></span><br><span class="line">./sdk.unpack: 34: ./sdk.unpack: run_command_progress_float: not found</span><br></pre></td></tr></table></figure>
-
-<p>说明您当前使用的系统的shell脚本解释器不是bash，所以我们需要稍微更改下文件<code>common.sh</code> <code>sdk.cleanup</code> <code>sdk.unpack</code></p>
-<p>将这个脚本的第一行由</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>改成</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>选择Shell解释器为bash即可，执行完毕后会有如下三个文件夹<code>drv</code> <code>mpp</code> <code>osdrv</code>：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── drv</span><br><span class="line">├── mpp</span><br><span class="line">├── osdrv		<span class="comment">// 内核源码</span></span><br><span class="line">├── package</span><br><span class="line">├── scripts</span><br><span class="line">├── sdk.cleanup</span><br><span class="line">└── sdk.unpack</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="安装交叉编译工具"><a href="#安装交叉编译工具" class="headerlink" title="安装交叉编译工具"></a>安装交叉编译工具</h3><p>官方总共提供了两种工具链编译：<code>arm-hisiv100nptl-linux</code> 与<code>arm-hisiv200-linux</code>，其中arm-hisiv100nptl-linux是uclibc工具链，arm-hisiv200-linux是glibc工具链 。</p>
-<ul>
-<li>uclibc 是一种小型的C语言标准库，主要用于嵌入式；</li>
-<li>glibc  是Linux下的GUN C的函数库；</li>
-</ul>
-<p>这里我使用的是uclibc，所以我需要安装的是arm-hisiv100nptl-linux，直接执行osdrv/toolchain/arm-hisiv100nptl-linux里的<code>cross.install</code>脚本文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ./cross.install</span><br></pre></td></tr></table></figure>
-
-<p>若文件没有可执行权限表示需要使用chmod给文件增加可执行权限，大概的输出结果如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CROSS_COMPILER_PATH=/opt/hisi-linux-nptl/arm-hisiv100-linux/target/bin</span><br><span class="line">Do not have version file</span><br><span class="line">Delete exist directory...</span><br><span class="line">Extract cross tools ...</span><br><span class="line"><span class="string">'/opt/hisi-linux-nptl/arm-hisiv100-linux/target/bin/arm-hisiv100nptl-linux-addr2line'</span> -&gt; <span class="string">'/opt/hisi-linux-nptl/arm-hisiv100-linux/bin/arm-hisiv100-linux-uclibcgnueabi-addr2line'</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>使用命令gcc命令判断是否环境已经配置完成</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ arm-hisiv100-linux-gcc -v</span><br></pre></td></tr></table></figure>
-
-<p>若提示没有此命令，那么就说明环境变量没有配上。至此我们的开发环境搭建完毕。</p>
-
-          
+自己还是第一次接触的Linux的平台，所以博客会记录自己的学习过程，由于学习环境不一样，所以以下的步骤可能会略有差异，整体应该是大同小异的。自己也是也是一个初学者，所以文章要是有错误的地方望
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/06/HiSilicon-Hi3520D-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -593,6 +426,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/logo/avatar.jpg"
+                alt="MankiChen" />
+            
               <p class="site-author-name" itemprop="name">MankiChen</p>
               <p class="site-description motion-element" itemprop="description">Happy Coding, Happy Life.</p>
           </div>
@@ -602,9 +439,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -614,10 +451,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">categories</span>
-                
+                </a>
               </div>
             
 
@@ -625,10 +462,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
-                
+                </a>
               </div>
             
 
@@ -642,20 +479,6 @@
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Links
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://mankichen.github.io" title="Title" target="_blank">Title</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           
@@ -695,7 +518,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -794,6 +617,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
