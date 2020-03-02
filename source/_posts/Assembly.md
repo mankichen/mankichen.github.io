@@ -94,10 +94,10 @@ PS：这个寄存器我们也常叫做程序计数器(PC)，**该寄存器无法
 4. 64bit `q`
 
 ```assembly
-movb %bl, %al; 将ebx寄存器的第8位赋值给eax的低8位
-movw %bx, %ax;
-movl %ebx, %eax;
-movl (%ebx), %eax;
+movb %bl, %al # 将ebx寄存器的第8位赋值给eax的低8位
+movw %bx, %ax
+movl %ebx, %eax
+movl (%ebx), %eax
 ```
 
 ### 操作数方向
@@ -105,8 +105,8 @@ movl (%ebx), %eax;
 AT&T语法中，第一操作数是源操作数，第二个操作数是目的操作数；
 
 ```assembly
-movl $1, %eax; 将操作数1放入寄存eax中
-movl (%ebx), %edx; 将ebx所指向的地址里的值放入edx中
+movl $1, %eax 		# 将操作数1放入寄存eax中
+movl (%ebx), %edx   # 将ebx所指向的地址里的值放入edx中
 ```
 
 `(%ebx)` 现在ebx存放的是地址，所以是取ebx存放的地址的值。
@@ -163,19 +163,19 @@ movq只能以表示为32位补码数字的立即数作为源操作数，然后�
 * pushl 将数据压入到栈中，首先先将栈指针-4，然后再将值写道栈顶的地址中。
 
   ```assembly
-  pushl %ebp;  等价下面两个指令
+  pushl %ebp # 等价下面两个指令
   
-  subl $4, %esp;  %esp先减4
-  movl %ebp, (%esp); 将%ebp寄存器的值存放到栈顶
+  subl $4, %esp 		# %esp先减4
+  movl %ebp, (%esp) 	# 将%ebp寄存器的值存放到栈顶
   ```
 
 * popl将栈顶的双字弹出栈，首先先从栈顶读出值，然后再将栈指针+4。
 
   ```assembly
-  popl %eax; 等价下面两个指令
+  popl %eax # 等价下面两个指令
   
-  movl (%esp), %eax; 将栈顶的值取出
-  addl $4, %esp; 将%esp加4
+  movl (%esp), %eax 	# 将栈顶的值取出
+  addl $4, %esp 		# 将%esp加4
   ```
 
 但是需要注意，当push与pop指令的参数是esp时，那么不等价。
@@ -198,14 +198,14 @@ call, ret这两条指令实现子程序（过程、函数等意思）的调用�
 ret指令实现子程序的返回机制，ret指令弹出栈中保存的指令地址，然后无条件转移到保存的指令地址执行。
 
 ```assembly
-call 0x1234 ;等价于下面两条，知识效果上等价（不可替换）
+call 0x1234 # 等价于下面两条，知识效果上等价（不可替换）
 
 pushl %eip(*)
 movl $0x1234, %eip(*)
 ```
 
 ```assembly
-ret  ;等价于下面，知识效果上等价（不可替换）
+ret  # 等价于下面，知识效果上等价（不可替换）
 
 pop %eip(*)
 ```
@@ -215,15 +215,15 @@ pop %eip(*)
 * enter 指令为被调用过程自动创建堆栈帧，等价于以下两条指令
 
   ```assembly
-  pushl %ebp;         将%ebp压栈
-  movl %esp %ebp;     将%esp保存到%ebp， 这两步是函数的标准开头
+  pushl %ebp         # 将%ebp压栈
+  movl %esp %ebp     # 将%esp保存到%ebp， 这两步是函数的标准开头
   ```
 
 * leave指令结束一个过程的堆栈帧，等价于下面两条指令
 
   ```assembly
-  movl %ebp, %esp;
-  popl %ebp;
+  movl %ebp, %esp
+  popl %ebp
   ```
 
   
